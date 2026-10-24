@@ -1,0 +1,18 @@
+[
+  {
+    "id": "eyelash-mansion",
+    "database": "salon_eyelash_mansion",
+    "name": "Eyelash Mansion Lash Bar",
+    "timezone": "Europe/London",
+    "profile": "salon",
+    "origins": ["http://localhost:4200", "http://127.0.0.1:4200", "http://localhost:4321", "http://127.0.0.1:4321", "https://eyelash-mansion-demo.netlify.app"]
+  },
+  {
+    "id": "ana-glow",
+    "database": "salon_ana_glow",
+    "name": "Ana Glow Beauty Studio",
+    "timezone": "Europe/London",
+    "profile": "salon",
+    "origins": ["http://localhost:4322", "http://127.0.0.1:4322"]
+  }
+]
