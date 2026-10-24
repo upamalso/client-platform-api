@@ -23,7 +23,7 @@ export class DatabaseService implements OnApplicationShutdown {
         waitForConnections: true, queueLimit: 100, connectTimeout: 5000,
         multipleStatements: false, dateStrings: true, timezone: 'Z',
         charset: 'utf8mb4',
-        ssl: this.config.dbTls ? { rejectUnauthorized: true, ...(this.config.dbCa ? { ca: this.config.dbCa } : {}) } : undefined,
+        ssl: this.config.dbTls ? { rejectUnauthorized: true, verifyIdentity: true, ...(this.config.dbCa ? { ca: this.config.dbCa } : {}) } : undefined,
       });
       this.pools.set(tenant.id, pool);
     }

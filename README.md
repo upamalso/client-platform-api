@@ -232,6 +232,12 @@ and profile-aware repository inside this same backend rather than forking APIs.
 
 ## Production frontend activation
 
+The Aiven tenant schemas, restricted runtime users and demo owners have now
+been provisioned and checked using a production-mode API. Follow
+[the prepared Render deployment guide](docs/render-deployment.md) to deploy
+with the ignored runtime environment file and the CA/tenant secret files.
+This local preparation does not mean Render or the frontend proxies are live.
+
 Production Angular configuration intentionally keeps `enabled: false` until a
 real API host is available, preserving existing Netlify demos. Development
 configuration enables the integration. This is an explicit demo mode, not a

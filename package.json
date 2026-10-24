@@ -6,6 +6,7 @@
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "start": "node --env-file=.env dist/main.js",
+    "start:prod": "node dist/main.js",
     "start:dev": "npm run build && node --watch --env-file=.env dist/main.js",
     "db:migrate": "npm run build && node --env-file=.env dist/database/cli.js migrate",
     "db:seed": "npm run build && node --env-file=.env dist/database/cli.js seed",

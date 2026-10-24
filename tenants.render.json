@@ -1,0 +1,22 @@
+[
+  {
+    "id": "eyelash-mansion",
+    "database": "salon_eyelash_mansion",
+    "name": "Eyelash Mansion Lash Bar",
+    "timezone": "Europe/London",
+    "profile": "salon",
+    "origins": ["https://eyelash-mansion-demo.netlify.app"],
+    "userEnv": "EYELASH_DB_USER",
+    "passwordEnv": "EYELASH_DB_PASSWORD"
+  },
+  {
+    "id": "ana-glow",
+    "database": "salon_ana_glow",
+    "name": "Ana Glow Beauty Studio",
+    "timezone": "Europe/London",
+    "profile": "salon",
+    "origins": ["https://ana-glow-beauty-studio.netlify.app"],
+    "userEnv": "ANA_GLOW_DB_USER",
+    "passwordEnv": "ANA_GLOW_DB_PASSWORD"
+  }
+]

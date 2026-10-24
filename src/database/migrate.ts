@@ -8,7 +8,7 @@ export async function migrateTenant(config: AppConfig, tenant: Tenant): Promise<
     user: process.env.MIGRATION_DB_USER ?? config.user,
     password: process.env.MIGRATION_DB_PASSWORD ?? config.password,
     multipleStatements: false,
-    ssl: config.dbTls ? { rejectUnauthorized: true, ...(config.dbCa ? { ca: config.dbCa } : {}) } : undefined,
+    ssl: config.dbTls ? { rejectUnauthorized: true, verifyIdentity: true, ...(config.dbCa ? { ca: config.dbCa } : {}) } : undefined,
   });
   const lock = `client-platform-migrate:${tenant.database}`;
   try {
